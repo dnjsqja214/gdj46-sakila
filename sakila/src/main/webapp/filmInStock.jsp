@@ -37,17 +37,17 @@
 	<h1>DVD 재고 확인</h1>
 	<form method="post" action="<%=request.getContextPath() %>/filmInStock.jsp">
 		<div>가게Id</div>
-		<div><input type="number" name="filmId"></div>
-		<div>영화번호</div>
 		<div><input type="number" name="storeId"></div>
+		<div>영화번호</div>
+		<div><input type="number" name="filmId"></div>
 		<button type ="submit" class="btn btn-secondary">제출</button>
 		<%
 			if(filmId!=0) { // 첫화면부터 0번 지점 재고0이라는 문구가 보이는게 안이뻐보여서 조건문을 넣었다
 		%>
-			<h3><div><%=storeId %>지점 재고: <%=count %></div></h3>
+			<h3><div><%=storeId %>지점 <%=filmId%>번 영화재고:  <%=count %></div></h3>
 			<table>
 				<thead>
-					<th>영화번호</th>
+					<th>인벤토리번호</th>
 				</thead>
 				<tbody>
 					<%

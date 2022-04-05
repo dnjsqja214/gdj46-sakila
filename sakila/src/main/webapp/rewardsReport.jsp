@@ -39,7 +39,7 @@
 	<form method="post" action="<%=request.getContextPath() %>/rewardsReport.jsp">
 		<div>구매횟수</div>
 		<div><input type="number" name="purchase"></div>
-		<div>한달동안 사용한 금액</div>
+		<div>사용한 금액</div>
 		<div><input type="number" name="amount"></div>
 		<button type ="submit" class="btn btn-secondary">제출</button>
 		<%
