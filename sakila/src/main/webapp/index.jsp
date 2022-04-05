@@ -14,7 +14,16 @@
 	<o1>
 		<li><a href="<%=request.getContextPath()%>/storeList.jsp" data-toggle="tooltip" title="점포의 직원이름과 주소">StoreList</a></li>
 		<li><a href="<%=request.getContextPath()%>/staffList.jsp" data-toggle="tooltip" title="직원의 주소,이메일,비밀번호">StaffList</a></li>
-		<li><a href="<%=request.getContextPath()%>/actorInfoList">ActorInfoList</a></li>
+		<li><a href="<%=request.getContextPath()%>/actorInfoList.jsp">ActorInfoList</a></li>
+		<li><a href="<%=request.getContextPath()%>/customerList.jsp">CustomerList</a></li>
+		<li><a href="<%=request.getContextPath()%>/filmList.jsp">FilmList</a></li>
+		<li><a href="<%=request.getContextPath()%>/nicerButSlowerFilmList.jsp">NicerButSlowerFilmList</a></li>
+	</o1>
+		<h3>Procedure</h3>
+	<o1>
+		<li><a href="<%=request.getContextPath()%>/filmInStock.jsp">FilmInStock</a></li>
+		<li><a href="<%=request.getContextPath()%>/filmNotInStock.jsp">FilmNotInStock</a></li>
+		<li><a href="<%=request.getContextPath()%>/rewardsReport.jsp">RewardsReport</a></li>
 	</o1>
 </div>
 </body>
