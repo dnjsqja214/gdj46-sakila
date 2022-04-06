@@ -1,6 +1,6 @@
 package vo;
 
-public class FilmList {
+public class FilmList { 
 	private int fid;
 	private String title;
 	private String description;

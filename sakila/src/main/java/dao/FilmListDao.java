@@ -43,6 +43,7 @@ public class FilmListDao {
 		}
 		return list;
 	}
+	// 합계
 	public int filmTotalRow() throws Exception{
 		int row = 0;
 		Connection conn = null;
