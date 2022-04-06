@@ -10,21 +10,26 @@
 <body>	
 <div class="container">
 	<h1>INDEX</h1>
-	<i class="fas fa-file"></i>
-	<o1>
-		<li><a href="<%=request.getContextPath()%>/storeList.jsp" data-toggle="tooltip" title="점포의 직원이름과 주소">StoreList</a></li>
-		<li><a href="<%=request.getContextPath()%>/staffList.jsp" data-toggle="tooltip" title="직원의 주소,이메일,비밀번호">StaffList</a></li>
-		<li><a href="<%=request.getContextPath()%>/actorInfoList.jsp">ActorInfoList</a></li>
-		<li><a href="<%=request.getContextPath()%>/customerList.jsp">CustomerList</a></li>
-		<li><a href="<%=request.getContextPath()%>/filmList.jsp">FilmList</a></li>
-		<li><a href="<%=request.getContextPath()%>/nicerButSlowerFilmList.jsp">NicerButSlowerFilmList</a></li>
-	</o1>
-		<h3>Procedure</h3>
-	<o1>
-		<li><a href="<%=request.getContextPath()%>/filmInStock.jsp">FilmInStock</a></li>
-		<li><a href="<%=request.getContextPath()%>/filmNotInStock.jsp">FilmNotInStock</a></li>
-		<li><a href="<%=request.getContextPath()%>/rewardsReport.jsp">RewardsReport</a></li>
-	</o1>
+		<h3 >List <i class="fas fa-list"></i></h3>
+				<li><a href="<%=request.getContextPath()%>/storeList.jsp" data-toggle="tooltip" title="점포의 직원이름과 주소">StoreList</a></li>
+				<li><a href="<%=request.getContextPath()%>/staffList.jsp" data-toggle="tooltip" title="직원의 주소,이메일,비밀번호">StaffList</a></li>
+			</o1>
+		<h3>Procedure <i class="fas fa-calculator"></i></h3>
+			<o1>
+				<li><a href="<%=request.getContextPath()%>/procedure/filmInStock.jsp" data-toggle="tooltip" title="재고 확인">FilmInStock</a></li>
+				<li><a href="<%=request.getContextPath()%>/procedure/filmNotInStock.jsp" data-toggle="tooltip" title="빌려간 재고 확인">FilmNotInStock</a></li>
+				<li><a href="<%=request.getContextPath()%>/procedure/rewardsReport.jsp" data-toggle="tooltip" title="vip 선정">RewardsReport</a></li>
+			</o1>
+	   <h3>View <i class="fas fa-table"></i></h3>
+	  		 <o1>
+				<li><a href="<%=request.getContextPath()%>/view/actorInfoList.jsp" data-toggle="tooltip" title="배우가 영화장르별로 무슨 영화에 출현했는지 정리">ActorInfoList</a></li>
+				<li><a href="<%=request.getContextPath()%>/view/customerList.jsp" data-toggle="tooltip" title="손님의 개인정보">CustomerList</a></li>
+				<li><a href="<%=request.getContextPath()%>/view/filmList.jsp" data-toggle="tooltip" title="영화정보">FilmList</a></li>
+				<li><a href="<%=request.getContextPath()%>/view/nicerButSlowerFilmList.jsp" data-toggle="tooltip" title="상점에 있는 영화 목록">NicerButSlowerFilmList</a></li>
+				<li><a href="<%=request.getContextPath()%>/view/salesByFilmCategory.jsp" data-toggle="tooltip" title="영화 장르별 매출의 합계정보">salesByFilmCategory</a></li>
+				<li><a href="<%=request.getContextPath()%>/view/salesByStore.jsp" data-toggle="tooltip" title="각 매니저의 상점 매출액 정보">salesByStore</a></li>
+				<li><a href="<%=request.getContextPath()%>/view/staffList.jsp" data-toggle="tooltip" title="staff정보">staffList</a></li>
+			</o1>
 </div>
 </body>
 </html>

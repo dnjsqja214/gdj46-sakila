@@ -1,5 +1,6 @@
 package dao;
 import vo.*;
+
 import java.util.*;
 import java.sql.*;
 import util.DBUtil;
@@ -8,9 +9,9 @@ public class ActorInfoDao {
 		List<ActorInfo> list = new ArrayList<ActorInfo>();
 		Connection conn = null;
 		conn = DBUtil.getConnection();
-		String sql = "SELECT actor_id actorId, first_name firstName, last_name lastName, film_info filmInfo FROM actor_info ORDER BY actor_id LIMIT ?,?";
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
+		String sql = "SELECT actor_id actorId, first_name firstName, last_name lastName, film_info filmInfo FROM actor_info ORDER BY actor_id LIMIT ?,?";
 		try {
 			stmt = conn.prepareStatement(sql);
 			// ?
