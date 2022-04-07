@@ -36,7 +36,7 @@
 <body>
 <div class="container">
 	<h1>VIP 기준 값을 넣어주세요</h1>
-	<form method="post" action="<%=request.getContextPath() %>/rewardsReport.jsp">
+	<form method="post" action="<%=request.getContextPath() %>/procedure/rewardsReport.jsp">
 		<div>구매횟수</div>
 		<div><input type="number" name="purchase"></div>
 		<div>사용한 금액</div>

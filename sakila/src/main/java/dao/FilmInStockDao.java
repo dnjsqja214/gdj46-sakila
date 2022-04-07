@@ -2,6 +2,7 @@ package dao;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
@@ -11,6 +12,32 @@ import util.DBUtil;
 import java.util.*;
 
 public class FilmInStockDao {
+	public List<Double> selectfilmPriceList() {
+	      List<Double> list = new ArrayList<Double>();
+	      Connection conn = null;
+	      PreparedStatement stmt = null;
+	      ResultSet rs = null;
+	      conn = DBUtil.getConnection();
+	      String sql = "SELECT DISTINCT price FROM film_list ORDER BY price";
+	      try {
+	         stmt = conn.prepareStatement(sql);
+	         rs = stmt.executeQuery();
+	         while(rs.next()) {
+	            list.add(rs.getDouble("price"));
+	         }
+	      } catch (SQLException e) {
+	         e.printStackTrace();
+	      } finally {
+	         try {
+	            rs.close();
+	            stmt.close();
+	            conn.close();
+	         } catch (SQLException e) {
+	            e.printStackTrace();
+	         }
+	      }
+	      return list;
+	   }
 	public Map<String, Object> filmInStockCall(int filmId, int storeId) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		Connection conn = null;
